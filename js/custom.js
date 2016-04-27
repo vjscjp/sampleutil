@@ -1,6 +1,6 @@
 
-    var endPoint = "http://localhost:8888";
-    //var endPoint = "http://dev--mapi--mapi--94ad2d.tx3.shipped-cisco.com";
+    //var endPoint = "http://localhost:8888";
+    var endPoint = "http://dev--mapi--mapi--94ad2d.tx3.shipped-cisco.com";
     var appEndPoint = endPoint + "/app/{{appName}}";
     var hostPortEndpoint = endPoint + "/hostport/{{hostName}}/{{port}}";
 
