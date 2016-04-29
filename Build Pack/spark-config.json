@@ -1,0 +1,30 @@
+
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-worker-004"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                "image": "shippedrepos-docker-1d9c35f5-fdd2-11e5-b72a-0242ac110049.bintray.io/spark1:93de6e905a91f587df17cafe1b82863a83f88d49",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 3000,
+                        "hostPort": 31757,
+                        "protocol": "tcp",
+                        "servicePort": 17739
+                    }
+                ],
+                "privileged": false,
+              "forcePullImage": true
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "spark1--scan"
+        },
+        "id": "/spark1--scan",
+        "instances": 1,
+        "uris": [ "https://api.ciscoshipped.io/projects/1d9c35f5-fdd2-11e5-b72a-0242ac110049/.dockercfg" ]
+}

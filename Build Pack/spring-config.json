@@ -1,0 +1,29 @@
+
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-worker-001"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                "image": "shippedrepos-docker-f22260c7-fdbb-11e5-b651-0242ac110049.bintray.io/spring1:3602c1a172920bdbdfa5fe64815bc18e42087c51",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 8080,
+                        "hostPort": 31757,
+                        "protocol": "tcp",
+                        "servicePort": 13579
+                    }
+                ],
+                "privileged": false
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "spring1--scan"
+        },
+        "id": "/spring1--scan",
+        "instances": 1,
+        "uris": [ "https://api.ciscoshipped.io/projects/f22260c7-fdbb-11e5-b651-0242ac110049/.dockercfg" ]
+}
