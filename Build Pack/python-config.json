@@ -1,0 +1,29 @@
+
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-worker-103.node.consul"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                "image": "shippedrepos-docker-f22260c7-fdbb-11e5-b651-0242ac110049.bintray.io/pyth1:a0b915d0c31c3046776e155b0eac1c1a24054a4e",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 5000,
+                        "hostPort": 31244,
+                        "protocol": "tcp",
+                        "servicePort": 13559
+                    }
+                ],
+                "privileged": false
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "pyth1--scan"
+        },
+        "id": "/pyth1--scan",
+        "instances": 1,
+        "uris": [ "https://api.ciscoshipped.io/projects/f22260c7-fdbb-11e5-b651-0242ac110049/.dockercfg" ]
+}

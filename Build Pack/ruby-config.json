@@ -1,0 +1,29 @@
+
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-infra-201.node.consul"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                "image": "shippedrepos-docker-f22260c7-fdbb-11e5-b651-0242ac110049.bintray.io/ruby1:b06fd18e1455e4671d167fdab52b48cf89a94c5b",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 3000,
+                        "hostPort": 31413,
+                        "protocol": "tcp",
+                        "servicePort": 13339
+                    }
+                ],
+                "privileged": false
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "ruby1--scan"
+        },
+        "id": "/ruby1--scan",
+        "instances": 1,
+        "uris": [ "https://api.ciscoshipped.io/projects/f22260c7-fdbb-11e5-b651-0242ac110049/.dockercfg" ]
+}

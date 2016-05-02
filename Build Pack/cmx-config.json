@@ -1,0 +1,28 @@
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-worker-102.node.consul"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                 "image": "shippedrepos-docker-1d9c35f5-fdd2-11e5-b72a-0242ac110049.bintray.io/cmx1:63023217167cd2e8a30229718e06c0fa5dff773e",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 3000,
+                        "hostPort": 31254,
+                        "protocol": "tcp",
+                        "servicePort": 15439 
+                    }
+                ],
+                "privileged": false
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "cmx1--scan"
+        },
+        "id": "/cmx1--scan",
+        "instances": 1,
+        "uris": [ "https://api.ciscoshipped.io/projects/1d9c35f5-fdd2-11e5-b72a-0242ac110049/.dockercfg" ]
+}

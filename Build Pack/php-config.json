@@ -1,0 +1,28 @@
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-worker-004"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                "image": "shippedrepos-docker-f22260c7-fdbb-11e5-b651-0242ac110049.bintray.io/php1:71f2a6e7ea98adead945aabc999ba0db214d8e7a",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 8080,
+                        "hostPort": 31294,
+                        "protocol": "tcp",
+                        "servicePort": 13239
+                    }
+                ],
+                "privileged": false
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "php1--scan"
+        },
+        "id": "/php1--scan",
+        "instances": 1,
+        "uris": [ "https://api.ciscoshipped.io/projects/f22260c7-fdbb-11e5-b651-0242ac110049/.dockercfg" ]
+}

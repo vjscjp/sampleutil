@@ -1,0 +1,28 @@
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-infra-201.node.consul"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                "image": "shippedrepos-docker-f22260c7-fdbb-11e5-b651-0242ac110049.bintray.io/go1:6154eacd7295a96edb2571e453ec7bc133d052cf",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 8888,
+                        "hostPort": 31414,
+                        "protocol": "tcp",
+                        "servicePort": 13249
+                    }
+                ],
+                "privileged": false
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "go1--scan"
+        },
+        "id": "/go1--scan",
+        "instances": 1,
+        "uris": [ "https://api.ciscoshipped.io/projects/f22260c7-fdbb-11e5-b651-0242ac110049/.dockercfg" ]
+}

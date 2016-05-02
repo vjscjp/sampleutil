@@ -1,0 +1,1 @@
+{"https://shippedrepos-docker-f22260c7-fdbb-11e5-b651-0242ac110049.bintray.io":{"auth":"ZjIyMjYwYzctZmRiYi0xMWU1LWI2NTEtMDI0MmFjMTEwMDQ5QHNoaXBwZWRyZXBvczoyZmUzMzc4ODdkYzVkMDNjNThkZWZjYWVmZmIzMTVjZDU0ZWMxNmM2","email":"f22260c7-fdbb-11e5-b651-0242ac110049@shippedrepos"}}

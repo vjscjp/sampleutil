@@ -1,0 +1,28 @@
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-worker-102.node.consul"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                "image": "shippedrepos-docker-f22260c7-fdbb-11e5-b651-0242ac110049.bintray.io/grunt1:af8dac03d874b675e06097b25670a47924a8705c",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 9000,
+                        "hostPort": 31614,
+                        "protocol": "tcp",
+                        "servicePort": 13679
+                    }
+                ],
+                "privileged": false
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "grunt1--scan"
+        },
+        "id": "/grunt1--scan",
+        "instances": 1,
+       "uris": [ "https://api.ciscoshipped.io/projects/f22260c7-fdbb-11e5-b651-0242ac110049/.dockercfg" ]
+}

@@ -1,0 +1,28 @@
+{
+        "constraints": [["hostname", "CLUSTER", "shipped-tx3-worker-002"]],
+        "container": {
+            "docker": {
+                "forcePullImage": false,
+                "image": "shippedrepos-docker-f22260c7-fdbb-11e5-b651-0242ac110049.bintray.io/exp1:4830f880b4e923c0685e1ddec4277078b1763bbf",
+                "network": "BRIDGE",
+                "portMappings": [
+                    {
+                        "containerPort": 3000,
+                        "hostPort": 31514,
+                        "protocol": "tcp",
+                        "servicePort": 13479
+                    }
+                ],
+                "privileged": false
+            },
+            "type": "DOCKER",
+            "volumes": []
+        },
+        "cpus": 1,
+        "env": {
+            "SERVICE_NAME": "exp1--scan"
+        },
+        "id": "/exp1--scan",
+        "instances": 1,
+        "uris": [ "https://api.ciscoshipped.io/projects/f22260c7-fdbb-11e5-b651-0242ac110049/.dockercfg" ]
+}
